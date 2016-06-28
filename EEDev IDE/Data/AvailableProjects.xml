@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<definition>
+  <information>
+    <Notice>Automatically created Do Not Change</Notice>
+    <Information>
+      <version>1</version>
+      <projects>1</projects>
+      <variations>2</variations>
+    </Information>
+  </information>
+  <projects>
+    <project name="Arduino">
+      <variation name="Uno">
+        <author>
+          Dave Gordon
+        </author>
+        <version>
+          1.0.0.0
+        </version>
+        <website>
+        </website>
+        <support>
+        </support>
+      </variation>
+      <variation name="Mega">
+        <author>
+          Dave Gordon
+        </author>
+        <version>
+          1.0.0.0
+        </version>
+        <website>
+        </website>
+        <support>
+        </support>
+      </variation>
+    </project>
+  </projects>
+</definition>
