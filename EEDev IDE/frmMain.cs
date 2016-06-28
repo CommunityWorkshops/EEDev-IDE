@@ -30,7 +30,7 @@ namespace EEDev_IDE
             InitializeComponent();
             var splash = new FrmSplash();
 
-            splash.Show();
+      //      splash.Show();
             _deserializeDockContent = new DeserializeDockContent(GetContentFromPersistString);
 
 

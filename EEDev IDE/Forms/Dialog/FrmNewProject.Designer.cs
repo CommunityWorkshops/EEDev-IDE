@@ -41,7 +41,7 @@
             this.lblTotalVariants = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblSelectedProjectType = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flpProjectTypes
@@ -57,7 +57,7 @@
             // flpProjectTypeVariations
             // 
             this.flpProjectTypeVariations.AutoScroll = true;
-            this.flpProjectTypeVariations.BackColor = System.Drawing.Color.DimGray;
+            this.flpProjectTypeVariations.BackColor = System.Drawing.Color.Gray;
             this.flpProjectTypeVariations.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpProjectTypeVariations.Location = new System.Drawing.Point(0, 228);
             this.flpProjectTypeVariations.Name = "flpProjectTypeVariations";
@@ -181,23 +181,23 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Project Type";
             // 
-            // label5
+            // lblSelectedProjectType
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(123, 537);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 20);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "...";
+            this.lblSelectedProjectType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSelectedProjectType.AutoSize = true;
+            this.lblSelectedProjectType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedProjectType.Location = new System.Drawing.Point(123, 537);
+            this.lblSelectedProjectType.Name = "lblSelectedProjectType";
+            this.lblSelectedProjectType.Size = new System.Drawing.Size(21, 20);
+            this.lblSelectedProjectType.TabIndex = 13;
+            this.lblSelectedProjectType.Text = "...";
             // 
             // FrmNewProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 674);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblSelectedProjectType);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTotalVariants);
             this.Controls.Add(this.label4);
@@ -234,6 +234,6 @@
         private System.Windows.Forms.Label lblTotalVariants;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblSelectedProjectType;
     }
 }

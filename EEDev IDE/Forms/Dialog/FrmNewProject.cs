@@ -16,6 +16,9 @@ namespace EEDev_IDE.Forms.Dialog
 {
     public partial class FrmNewProject : Form
     {
+        public string SelectedProjectType { get; private set; }
+        public string SelectedProjectVariation { get; private set; }
+
         public FrmNewProject()
         {
             InitializeComponent();
@@ -52,7 +55,7 @@ namespace EEDev_IDE.Forms.Dialog
                 {
                     foreach (XmlNode childNode in element.ChildNodes)
                     {
-                        LoadProjectVariation(childNode.Attributes[0].Value,type);
+                        if (childNode.Attributes != null) LoadProjectVariation(childNode.Attributes[0].Value,type);
                     }
                 }
             }            
@@ -69,11 +72,20 @@ namespace EEDev_IDE.Forms.Dialog
                 {
                     Tag = variationType
                 };
+
+                npc.NewProjectTypeSelectedEvent += Npc_NewProjectTypeSelectedEvent;
                 flpProjectTypeVariations.Controls.Add(npc);
 
             }
         }
 
+        private void Npc_NewProjectTypeSelectedEvent(string projectName)
+        {
+            SelectedProjectVariation = projectName;
+            lblSelectedProjectType.Text = SelectedProjectType + " " + SelectedProjectVariation;
+        }
+
+       
         private Image GetProjectTypeVariationImage(string projectType, string variationType)
         {
             return Image.FromFile("Templates\\Projects\\" + projectType + "\\Types\\" + variationType + "\\Images\\ProjectImage.jpg");
@@ -118,6 +130,7 @@ namespace EEDev_IDE.Forms.Dialog
                     Tag = projectType                    
                 };
 
+                npc.NewProjectTypeSelectedEvent += Npc_NewProjectTypeSelectedEvent1;
                 npc.Selected();
                 flpProjectTypes.Controls.Add(npc);
 
@@ -127,6 +140,12 @@ namespace EEDev_IDE.Forms.Dialog
             {
                 //TODO: Show Missing Project - Do they want to remove it?
             }
+        }
+
+        private void Npc_NewProjectTypeSelectedEvent1(string projectName)
+        {
+            SelectedProjectType = projectName;
+            lblSelectedProjectType.Text = SelectedProjectType + " " + SelectedProjectVariation;
         }
 
         private static Image GetProjectTypeImage(string projectType)
