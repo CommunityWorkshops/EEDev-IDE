@@ -7,6 +7,7 @@ Pull Requests Welcome.
 Roadmap:
 
 Version 1: Full Software Development IDE
+
   - Visual Studio Like IDE
   - Intelisense
   - Code Completion
@@ -14,8 +15,12 @@ Version 1: Full Software Development IDE
   - Library Management
   - Social Integration 
   - Degugger
+  
 Version 2: Full Visual Development IDE
+
   - Circuit Diagram Generator
   - Track Routing
+  
 Version 3: Full Simulator Integration
+
   - PCB Simulator
