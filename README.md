@@ -4,9 +4,9 @@ The new free professional Integrated Development Environment for Electronic Engi
 
 Pull Requests Welcome.
 
-Roadmap:
+##Roadmap:
 
-Version 1: Full Software Development IDE
+###Version 1: Full Software Development IDE
 
   - Visual Studio Like IDE
   - Intelisense
@@ -16,11 +16,11 @@ Version 1: Full Software Development IDE
   - Social Integration 
   - Degugger
   
-Version 2: Full Visual Development IDE
+###Version 2: Full Visual Development IDE
 
   - Circuit Diagram Generator
   - Track Routing
   
-Version 3: Full Simulator Integration
+###Version 3: Full Simulator Integration
 
   - PCB Simulator
