@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace EEDev_IDE.Forms.Dialog
 {
     public partial class FrmFirstRun : Form
@@ -15,6 +16,8 @@ namespace EEDev_IDE.Forms.Dialog
         public FrmFirstRun()
         {
             InitializeComponent();
+            
         }
-    }
+
+       
 }
