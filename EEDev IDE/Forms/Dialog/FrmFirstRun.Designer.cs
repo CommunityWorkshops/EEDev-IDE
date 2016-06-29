@@ -60,7 +60,7 @@
             this.tbName.Location = new System.Drawing.Point(109, 10);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(339, 20);
-            this.tbName.TabIndex = 1;
+            this.tbName.TabIndex = 0;
             // 
             // tbEmail
             // 
@@ -69,7 +69,7 @@
             this.tbEmail.Location = new System.Drawing.Point(109, 36);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(339, 20);
-            this.tbEmail.TabIndex = 3;
+            this.tbEmail.TabIndex = 1;
             // 
             // label2
             // 
@@ -87,7 +87,7 @@
             this.tbPassword.Location = new System.Drawing.Point(109, 62);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(339, 20);
-            this.tbPassword.TabIndex = 5;
+            this.tbPassword.TabIndex = 2;
             // 
             // label3
             // 
@@ -105,7 +105,7 @@
             this.tbPasswordConfirm.Location = new System.Drawing.Point(109, 88);
             this.tbPasswordConfirm.Name = "tbPasswordConfirm";
             this.tbPasswordConfirm.Size = new System.Drawing.Size(339, 20);
-            this.tbPasswordConfirm.TabIndex = 7;
+            this.tbPasswordConfirm.TabIndex = 3;
             // 
             // label4
             // 
@@ -123,7 +123,7 @@
             this.cbGithubAccount.Location = new System.Drawing.Point(16, 123);
             this.cbGithubAccount.Name = "cbGithubAccount";
             this.cbGithubAccount.Size = new System.Drawing.Size(142, 17);
-            this.cbGithubAccount.TabIndex = 8;
+            this.cbGithubAccount.TabIndex = 4;
             this.cbGithubAccount.Text = "I have a Github Account";
             this.cbGithubAccount.UseVisualStyleBackColor = true;
             // 
@@ -133,7 +133,7 @@
             this.btnLogin.Location = new System.Drawing.Point(16, 187);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 9;
+            this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
@@ -143,7 +143,7 @@
             this.btnRegister.Location = new System.Drawing.Point(373, 187);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 10;
+            this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             // 
@@ -154,7 +154,7 @@
             this.cbFacebookAccount.Location = new System.Drawing.Point(289, 137);
             this.cbFacebookAccount.Name = "cbFacebookAccount";
             this.cbFacebookAccount.Size = new System.Drawing.Size(159, 17);
-            this.cbFacebookAccount.TabIndex = 11;
+            this.cbFacebookAccount.TabIndex = 6;
             this.cbFacebookAccount.Text = "I have a Facebook Account";
             this.cbFacebookAccount.UseVisualStyleBackColor = true;
             // 
@@ -165,7 +165,7 @@
             this.cbTwitterAccount.Location = new System.Drawing.Point(289, 114);
             this.cbTwitterAccount.Name = "cbTwitterAccount";
             this.cbTwitterAccount.Size = new System.Drawing.Size(143, 17);
-            this.cbTwitterAccount.TabIndex = 12;
+            this.cbTwitterAccount.TabIndex = 5;
             this.cbTwitterAccount.Text = "I have a Twitter Account";
             this.cbTwitterAccount.UseVisualStyleBackColor = true;
             // 
