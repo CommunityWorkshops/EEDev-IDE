@@ -3,17 +3,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EEDev_IDE.Data.Models
 {
-    [Serializable]
-    internal class UserModel
+   
+    internal static class UserModel
     {
         [Key]
-        public string Email { get; set; }
-        public string Name { get; set; }        
-        public string Password { get; set; }
+        public static string Email { get; set; }
+        public static string Name { get; set; }
+        public static string Password { get; set; }
 
-        public bool GitHub { get; set; }
-        public bool Twitter { get; set; }
-        public bool Facebook { get; set; }
+        public static bool GitHub { get; set; }
+        public static bool Twitter { get; set; }
+        public static bool Facebook { get; set; }
 
     }
 }
