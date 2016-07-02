@@ -36,8 +36,17 @@
     <ApplicationIcon>EEDEV_IDE_LOGO.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Database\DbCore.cs" />
+    <Compile Include="Classes\IO\FileIO.cs" />
     <Compile Include="Controls\NewProjectChoice.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -61,6 +72,13 @@
       <DependentUpon>NewProjectChoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Models\AvailableProjects.cs" />
+    <Compile Include="Data\Models\UserModel.cs" />
+    <Compile Include="Forms\Dialog\FrmFirstRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialog\FrmFirstRun.Designer.cs">
+      <DependentUpon>FrmFirstRun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Dialog\FrmNewProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +107,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\NewProjectChoice.resx">
       <DependentUpon>NewProjectChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialog\FrmFirstRun.resx">
+      <DependentUpon>FrmFirstRun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialog\FrmNewProject.resx">
       <DependentUpon>FrmNewProject.cs</DependentUpon>
@@ -132,6 +153,7 @@
     </Content>
     <Content Include="EEDEV_IDE_LOGO.ico" />
     <Content Include="license.txt" />
+    <None Include="Templates\Licenses\License.tpl" />
     <Content Include="Templates\Projects\Arduino\Image\ProjectImage.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
